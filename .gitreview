@@ -1,7 +1,7 @@
 [gerrit]
 host=gerrit.wikimedia.org
 port=29418
-project=mediawiki/extensions/TemplateScripts.git
+project=mediawiki/extensions/UseResource.git
 track=1
 defaultrebase=0
 defaultbranch=master
