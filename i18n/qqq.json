@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Brandon Fowler"
+		]
+	},
+	"useresource-extensionname": "The name of the UseResource extension.",
+	"useresource-desc": "The description of the UseResource extension.",
+	"useresource-empty-src": "Error message to show when there's no src or the src is empty.",
+	"useresource-invalid-title": "Error message to show when the src provided is not a valid title.",
+	"useresource-invalid-namespace": "Error message shown when the page is in the wrong namespace. Parameters:\n* $1 - The page trying to be loaded.\n* $2 - The name of the valid namespace.",
+	"useresource-no-content": "Error message to show when the provided page has no content (e.g. it doesn't exist). Parameters:\n* $1 - The page being loaded.",
+	"useresource-invalid-content": "Error message to show when the page doesn't have the required d content model. Parameters:\n* $1 - The page being loaded.\n* $2 - The required content model.\n* $3 - The current content model of the page.",
+	"useresource-error-category": "Category for pages that have UseResource related errors."
+}

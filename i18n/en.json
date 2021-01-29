@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Brandon Fowler"
+		]
+	},
+	"useresource-extensionname": "UseResource",
+	"useresource-desc": "Adds the `<usescript>` and `<usestyle>` tags that allows JavaScript and CSS in the MediaWiki namespace to be loaded on a per-page basis.",
+	"useresource-empty-src": "The <code>src</code> attribute must not be empty.",
+	"useresource-invalid-title": "The <code>src</code> attribute must be a valid title.",
+	"useresource-invalid-namespace": "Page [[:$1]] must be in the namespace $2.",
+	"useresource-no-content": "Page [[:$1]] has no content.",
+	"useresource-invalid-content": "Page [[:$1]] must have the $2 content model, current content model is $3.",
+	"useresource-error-category": "Pages with UseResource errors"
+}
