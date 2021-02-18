@@ -67,14 +67,14 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 	}
 
 	public function testOnParserFirstCallInit() {
-		$this->assertArrayHasKey(
+		$this->assertContains(
 			'usescript',
-			$this->parser->mTagHooks,
+			$this->parser->getTags(),
 			'usescript tag should be registered.'
 		);
-		$this->assertArrayHasKey(
+		$this->assertContains(
 			'usestyle',
-			$this->parser->mTagHooks,
+			$this->parser->getTags(),
 			'usestyle tag should be registered.'
 		);
 	}
