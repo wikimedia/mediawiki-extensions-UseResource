@@ -4,7 +4,6 @@
 			"Brandon Fowler"
 		]
 	},
-	"useresource-extensionname": "UseResource",
 	"useresource-desc": "Adds the `<usescript>` and `<usestyle>` tags that allows JavaScript and CSS in the MediaWiki namespace to be loaded on a per-page basis.",
 	"useresource-empty-src": "The <code>src</code> attribute must not be empty.",
 	"useresource-invalid-title": "The <code>src</code> attribute must be a valid title.",

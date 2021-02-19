@@ -4,7 +4,6 @@
 			"Brandon Fowler"
 		]
 	},
-	"useresource-extensionname": "The name of the UseResource extension.",
 	"useresource-desc": "The description of the UseResource extension.",
 	"useresource-empty-src": "Error message to show when there's no src or the src is empty.",
 	"useresource-invalid-title": "Error message to show when the src provided is not a valid title.",
