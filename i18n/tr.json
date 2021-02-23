@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joseph"
+		]
+	},
+	"useresource-desc": "JavaScript ve CSS’in MediaWiki ad alanında sayfa bazlı yüklenmesine izin veren `<usescript>` ve `<usestyle>` etiketlerini ekler.",
+	"useresource-empty-src": "<code>src</code> özelliği boş olamaz.",
+	"useresource-invalid-title": "<code>src</code> özelliği geçerli bir başlık olmalıdır.",
+	"useresource-invalid-namespace": "[[:$1]] sayfası $2 ad alanında olmalıdır.",
+	"useresource-no-content": "[[:$1]] sayfasının içeriği yok.",
+	"useresource-invalid-content": "[[:$1]] sayfası $2 içerik modeline sahip olmalıdır, şu anki model $3.",
+	"useresource-error-category": "UseResource hataları içeren sayfalar"
+}

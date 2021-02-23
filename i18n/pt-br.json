@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardoaddad"
+		]
+	},
+	"useresource-empty-src": "O atributo <code>src</code> não deve estar vazio.",
+	"useresource-invalid-title": "O atributo <code>src</code> deve ser um título válido.",
+	"useresource-invalid-namespace": "A página [[:$1]] deve estar no espaço nominal $2.",
+	"useresource-no-content": "A página [[:$1]] não tem conteúdo.",
+	"useresource-invalid-content": "A página [[:$1]] deve ter o modelo de conteúdo $2, o modelo de conteúdo atual é $3.",
+	"useresource-error-category": "Páginas com erros UseResource"
+}

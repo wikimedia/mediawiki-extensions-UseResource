@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sabelöga"
+		]
+	},
+	"useresource-desc": "Lägger till taggarna `<usescript>` och `<usestyle>` som låter JavaScript och CSS i namnrymden MediaWiki laddas in sida för sida.",
+	"useresource-empty-src": "Attributet <code>src</code> får inte vara tomt.",
+	"useresource-invalid-title": "Attributet <code>src</code> måste vara en giltig titel.",
+	"useresource-invalid-namespace": "Sidan [[:$1]] måste vara i namnrymden $2.",
+	"useresource-no-content": "Sidan [[:$1]] har inget innehåll.",
+	"useresource-invalid-content": "Sidan [[:$1]] måste ha innehållsmodellen $2, nuvarande innehållsmodell är $3.",
+	"useresource-error-category": "Sidor med UseResource-fel"
+}

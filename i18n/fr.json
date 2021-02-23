@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gomoko"
+		]
+	},
+	"useresource-desc": "Ajoute les balises `<usescript>` et `<usestyle>` qui permettent au JavaScript et au CSS dans l’espace de noms MediaWiki d’être chargé sur un périmètre par page.",
+	"useresource-empty-src": "L’attribut <code>src</code> ne doit pas être vide.",
+	"useresource-invalid-title": "L’attribut <code>src</code> doit être un titre valide.",
+	"useresource-invalid-namespace": "La page [[:$1]] doit être dans l’espace de noms $2.",
+	"useresource-no-content": "La page [[:$1]] n’a pas de contenu.",
+	"useresource-invalid-content": "La page [[:$1]] doit avoir le modèle de contenu $2, son modèle de contenu actuel est $3.",
+	"useresource-error-category": "Pages avec des erreurs UseResource"
+}

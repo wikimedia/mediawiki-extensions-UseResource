@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gebu"
+		]
+	},
+	"useresource-desc": "Fügt die Tags <usescript> und <usestyle> hinzu, die es ermöglichen, JavaScript und CSS im MediaWiki-Namensraum auf einer seitenweisen Basis zu laden.",
+	"useresource-empty-src": "Das Attribut <code>src</code> darf nicht leer sein.",
+	"useresource-invalid-title": "Das Attribut <code>src</code> muss ein gültiger Titel sein.",
+	"useresource-invalid-namespace": "Die Seite [[:$1]] muss im Namespace $2 liegen.",
+	"useresource-no-content": "Die Seite [[:$1]] hat keinen Inhalt.",
+	"useresource-invalid-content": "Seite [[:$1]] muss das Inhaltsmodell $2 haben, aktuelles Inhaltsmodell ist $3.",
+	"useresource-error-category": "Seiten, die UseResource-Fehler enthalten"
+}
