@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"useresource-empty-src": "L'attributo <code>src</code> non può essere vuoto.",
+	"useresource-invalid-title": "L'attributo <code>src</code> deve essere un titolo valido.",
+	"useresource-invalid-namespace": "La pagina [[:$1]] deve essere nel namespace $2.",
+	"useresource-no-content": "La pagina [[:$1]] è priva di contenuto."
+}

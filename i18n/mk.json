@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"useresource-desc": "Ги додава ознаките „<usescript>“ и „<usestyle>“ кои овозможуваат JavaScript и CSS во именскиот простор МедијаВики да се вчитуваат на основа страница по страница.",
+	"useresource-empty-src": "Атрибутот <code>src</code> не може да биде празен.",
+	"useresource-invalid-title": "Атрибутот <code>src</code> мора да претставува важечки наслов.",
+	"useresource-invalid-namespace": "Страницата [[:$1]] мора да се наоѓа во именскиот простор $2.",
+	"useresource-no-content": "Страницата [[:$1]] нема содржина.",
+	"useresource-invalid-content": "Страницата [[:$1]] мора да го има содржинскиот модел $2, а тековниот е $3.",
+	"useresource-error-category": "Страници со грешки во UseResource"
+}
