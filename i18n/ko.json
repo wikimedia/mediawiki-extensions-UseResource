@@ -4,7 +4,9 @@
 			"Ykhwong"
 		]
 	},
+	"useresource-invalid-title": "<code>src</code> 속성은 유효한 제목이어야 합니다.",
 	"useresource-invalid-namespace": "[[:$1]] 페이지는 $2 이름공간에 있어야 합니다.",
 	"useresource-no-content": "[[:$1]] 문서에 내용이 없습니다.",
-	"useresource-invalid-content": "[[:$1]] 페이지는 $2 콘텐츠 모델을 보유해야 합니다. 현재의 콘텐츠 모델은 $3입니다."
+	"useresource-invalid-content": "[[:$1]] 페이지는 $2 콘텐츠 모델을 보유해야 합니다. 현재의 콘텐츠 모델은 $3입니다.",
+	"useresource-error-category": "UseResource 오류가 있는 문서"
 }
