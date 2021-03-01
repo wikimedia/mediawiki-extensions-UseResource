@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Brandon Fowler",
-			"Raymond"
+			"Raymond",
+			"Umherirrender"
 		]
 	},
-	"useresource-desc": "{{desc|name=Flagged Revisions|url=https://www.mediawiki.org/wiki/Extension:UseResource}}",
+	"useresource-desc": "{{desc|name=UseResource|url=https://www.mediawiki.org/wiki/Extension:UseResource}}",
 	"useresource-empty-src": "Error message to show when there's no src or the src is empty.",
 	"useresource-invalid-title": "Error message to show when the src provided is not a valid title.",
 	"useresource-invalid-namespace": "Error message shown when the page is in the wrong namespace. Parameters:\n* $1 - The page trying to be loaded.\n* $2 - The name of the valid namespace.",

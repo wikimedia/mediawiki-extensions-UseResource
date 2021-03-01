@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mainframe98"
+		]
+	},
+	"useresource-empty-src": "Het attribuut <code>src</code> mag niet leeg zijn.",
+	"useresource-invalid-title": "Het attribuut <code>src</code> moet een geldige titel zijn.",
+	"useresource-invalid-namespace": "Pagina [[:$1]] moet zich in de $1 naamruimte bevinden.",
+	"useresource-no-content": "Pagina [[:$1]] heeft geen inhoud.",
+	"useresource-invalid-content": "Pagina [[:$1]] moet het inhoudsmodel $2 hebben, maar heeft momenteel het inhoudsmodel $3."
+}
