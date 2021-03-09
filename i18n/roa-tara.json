@@ -4,5 +4,11 @@
 			"Joetaras"
 		]
 	},
-	"useresource-no-content": "'A pàgene [[:$1]] non ge tène 'u condenute."
+	"useresource-desc": "Aggiunge le tag `<usescript>` e `<usestyle>` ca permettene a 'u JavaScript e le CSS jndr'à 'u namespace MediaUicchi de essere carecate pe ogne pàgene.",
+	"useresource-empty-src": "L'attrebbute <code>src</code> non ge pò essere vacande.",
+	"useresource-invalid-title": "L'attrebbute <code>src</code> adda tenè 'nu titole valide.",
+	"useresource-invalid-namespace": "Pàgene [[:$1]] adda essere jndr'à 'u namespace $2.",
+	"useresource-no-content": "'A pàgene [[:$1]] non ge tène 'u condenute.",
+	"useresource-invalid-content": "Pàgene [[:$1]] adda tenè 'u modelle de condenute $2, 'u modelle de condenute de mò jè $3.",
+	"useresource-error-category": "Pàggene cu le errore UseResource"
 }
