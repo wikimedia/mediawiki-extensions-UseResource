@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kly"
+		]
+	},
+	"useresource-desc": "添加 `<usescript>` 與 `<usestyle>` 標籤，來允許在 MediaWiki 命名空間的 JavaScript 與 CSS 被載入在各頁面主要部分。",
+	"useresource-empty-src": "<code>src</code> 屬性不可為空。",
+	"useresource-invalid-title": "<code>src</code> 屬性必須是有效標題。",
+	"useresource-invalid-namespace": "頁面[[:$1]]必須在命名空間$2裡。",
+	"useresource-no-content": "頁面[[:$1]]沒有內容。",
+	"useresource-invalid-content": "頁面[[:$1]]必須要有$2內容模組，目前的內容模組為$3。",
+	"useresource-error-category": "帶有使用來源錯誤的頁面"
+}
