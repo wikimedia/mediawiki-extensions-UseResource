@@ -146,7 +146,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 	}
 
 	public function provideOnOutputPageParserOutputWithCode() {
-		// @codingStandardsIgnoreStart Ignore Generic.Files.LineLength.TooLong
+		// phpcs:disable Generic.Files.LineLength
 		return [
 			'One usescript tag' => [
 				'<usescript src="UseResourceTest.js" />',
@@ -184,7 +184,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 				false
 			]
 		];
-		// @codingStandardsIgnoreEnd
+		// phpcs:enable
 	}
 
 	/**
@@ -213,7 +213,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 	}
 
 	public function provideHandleTag() {
-		// @codingStandardsIgnoreStart Ignore Generic.Files.LineLength.TooLong
+		// phpcs:disable Generic.Files.LineLength
 		return [
 			'Tag with empty content' => [
 				'<usescript src="MediaWiki:UseResourceTest.js"></usescript>',
@@ -364,6 +364,6 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 				}
 			]
 		];
-		// @codingStandardsIgnoreEnd
+		// phpcs:enable
 	}
 }
