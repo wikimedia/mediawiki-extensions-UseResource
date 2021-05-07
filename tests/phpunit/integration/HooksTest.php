@@ -218,7 +218,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 			'Tag with empty content' => [
 				'<usescript src="MediaWiki:UseResourceTest.js"></usescript>',
 				'<div class="mw-parser-output"></div>',
-				function ( $ids ) {
+				static function ( $ids ) {
 					return [
 						'pages' => [ $ids[0] ],
 						'js' => '!function(){console.log(7)}();'
@@ -228,7 +228,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 			'Tag with content' => [
 				'<usescript src="MediaWiki:UseResourceTest.js">Some text</usescript>',
 				'<div class="mw-parser-output"></div>',
-				function ( $ids ) {
+				static function ( $ids ) {
 					return [
 						'pages' => [ $ids[0] ],
 						'js' => '!function(){console.log(7)}();'
@@ -286,7 +286,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 			'Tag with valid namespace' => [
 				'<usescript src="MediaWiki:UseResourceTest.js" />',
 				'<div class="mw-parser-output"></div>',
-				function ( $ids ) {
+				static function ( $ids ) {
 					return [
 						'pages' => [ $ids[0] ],
 						'js' => '!function(){console.log(7)}();'
@@ -296,7 +296,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 			'Tag without namespace' => [
 				'<usescript src="UseResourceTest.js" />',
 				'<div class="mw-parser-output"></div>',
-				function ( $ids ) {
+				static function ( $ids ) {
 					return [
 						'pages' => [ $ids[0] ],
 						'js' => '!function(){console.log(7)}();'
@@ -306,7 +306,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 			'Tag with empty page' => [
 				'<usescript src="MediaWiki:UseResourceTest2.js" />',
 				'<div class="mw-parser-output"></div>',
-				function ( $ids ) {
+				static function ( $ids ) {
 					return [
 						'pages' => [ $ids[1] ]
 					];
@@ -315,7 +315,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 			'Two tags' => [
 				'<usescript src="MediaWiki:UseResourceTest.js" /><usescript src="MediaWiki:UseResourceTest3.js" />',
 				'<div class="mw-parser-output"></div>',
-				function ( $ids ) {
+				static function ( $ids ) {
 					return [
 						'pages' => [ $ids[0], $ids[2] ],
 						'js' => '!function(){console.log(7)}();!function(){alert(8)}();'
@@ -325,7 +325,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 			'Two of the same tag'  => [
 				'<usescript src="MediaWiki:UseResourceTest.js" /><usescript src="MediaWiki:UseResourceTest.js" />',
 				'<div class="mw-parser-output"></div>',
-				function ( $ids ) {
+				static function ( $ids ) {
 					return [
 						'pages' => [ $ids[0] ],
 						'js' => '!function(){console.log(7)}();'
@@ -335,7 +335,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 			'Only a usestyle tag' => [
 				'<usestyle src="MediaWiki:UseResourceTest.css" />',
 				'<div class="mw-parser-output"></div>',
-				function ( $ids ) {
+				static function ( $ids ) {
 					return [
 						'pages' => [ $ids[3] ],
 						'css' => '*{color:red}'
@@ -345,7 +345,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 			'Only a usescript tag' => [
 				'<usescript src="MediaWiki:UseResourceTest.js" />',
 				'<div class="mw-parser-output"></div>',
-				function ( $ids ) {
+				static function ( $ids ) {
 					return [
 						'pages' => [ $ids[0] ],
 						'js' => '!function(){console.log(7)}();'
@@ -355,7 +355,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 			'Both usestyle and usescript tags'  => [
 				'<usescript src="MediaWiki:UseResourceTest.js" /><usestyle src="MediaWiki:UseResourceTest.css" />',
 				'<div class="mw-parser-output"></div>',
-				function ( $ids ) {
+				static function ( $ids ) {
 					return [
 						'pages' => [ $ids[0], $ids[3] ],
 						'js' => '!function(){console.log(7)}();',
