@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"আফতাবুজ্জামান"
+		]
+	},
+	"useresource-empty-src": "<code>src</code> বৈশিষ্ট্যটি ফাঁকা থাকতে পারবে না।",
+	"useresource-invalid-title": "<code>src</code> বৈশিষ্ট্যটিকে অবশ্যই একটি বৈধ শিরোনাম হতে হবে।",
+	"useresource-invalid-namespace": "[[:$1]] পাতাটি অবশ্যই $2 নামস্থানে হতে হবে।",
+	"useresource-no-content": "[[:$1]] পাতাটিতে কোন বিষয়বস্তু নেই।",
+	"useresource-invalid-content": "[[:$1]] পাতাটির বিষয়বস্তুর রূপ অবশ্যই $2 হতে হবে, বর্তমানে এর বিষয়বস্তুর রূপ হল $3।"
+}
