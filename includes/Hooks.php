@@ -58,7 +58,7 @@ class Hooks implements OutputPageParserOutputHook, ParserFirstCallInitHook {
 	 * @param OutputPage $out
 	 * @param ParserOutput $parserOutput
 	 */
-	public function onOutputPageParserOutput( $out, $parserOutput ) : void {
+	public function onOutputPageParserOutput( $out, $parserOutput ): void {
 		$data = $parserOutput->getExtensionData( 'useresource' );
 
 		if ( !$data ) {

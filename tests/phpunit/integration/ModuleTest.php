@@ -32,7 +32,7 @@ class ModuleTest extends ResourceLoaderTestCase {
 	/** @var Module */
 	private $module;
 
-	protected function setUp() : void {
+	protected function setUp(): void {
 		parent::setUp();
 		$this->module = new Module( [
 			'code' => 'console.log(7)'

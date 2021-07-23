@@ -40,7 +40,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 	/** @var ParserOptions */
 	private $parserOptions;
 
-	protected function setUp() : void {
+	protected function setUp(): void {
 		parent::setUp();
 
 		$this->setUserLang( 'qqx' );
