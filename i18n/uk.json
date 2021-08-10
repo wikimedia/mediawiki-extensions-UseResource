@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"DDPAT"
+		]
+	},
+	"useresource-desc": "Додає теги `<usescript>` і `<usestyle>`, що дозволяє завантажувати JavaScript та CSS у просторі імен MediaWiki для кожної сторінки.",
+	"useresource-empty-src": "Атрибут <code>src</code> не повинен бути порожнім.",
+	"useresource-invalid-title": "Атрибут <code>src</code> має бути дійсним заголовком.",
+	"useresource-invalid-namespace": "Сторінка [[:$1]] має бути у просторі імен $2.",
+	"useresource-no-content": "Сторінка [[:$1]] не містить вмісту.",
+	"useresource-invalid-content": "Сторінка [[:$1]] повинна мати $2 моделі вмісту, поточна модель вмісту - $3.",
+	"useresource-error-category": "Сторінки з помилками UseResource"
+}
