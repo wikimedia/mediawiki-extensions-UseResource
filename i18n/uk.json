@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"DDPAT"
+			"DDPAT",
+			"Ice bulldog"
 		]
 	},
 	"useresource-desc": "Додає теги `<usescript>` і `<usestyle>`, що дозволяє завантажувати JavaScript та CSS у просторі імен MediaWiki для кожної сторінки.",
