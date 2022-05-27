@@ -19,12 +19,12 @@
 
 namespace MediaWiki\Extension\UseResource;
 
-use ResourceLoaderModule;
+use MediaWiki\ResourceLoader as RL;
 
 /**
  * Resource loader for the resource module UseResource adds to the page
  */
-class Module extends ResourceLoaderModule {
+class Module extends RL\Module {
 	/** @var string */
 	private $script;
 

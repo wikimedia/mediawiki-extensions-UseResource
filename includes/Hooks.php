@@ -25,11 +25,11 @@ use Html;
 use JavaScriptContent;
 use MediaWiki\Hook\OutputPageParserOutputHook;
 use MediaWiki\Hook\ParserFirstCallInitHook;
+use MediaWiki\ResourceLoader\ResourceLoader;
 use MediaWiki\Revision\SlotRecord;
 use OutputPage;
 use Parser;
 use ParserOutput;
-use ResourceLoader;
 use TextContent;
 use Title;
 
