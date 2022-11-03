@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"useresource-desc": "Adiciona as etiquetas `<usescript>` e `<usestyle>` que permitem que códigos JavaScript e CSS sejam carregados no espaço nominal MediaWiki por página.",
+	"useresource-empty-src": "O atributo <code>src</code> não pode estar vazio.",
+	"useresource-invalid-title": "O atributo <code>src</code> tem de ser um título válido.",
+	"useresource-invalid-namespace": "A página [[:$1]] tem de estar no espaço nominal $2.",
+	"useresource-no-content": "A página [[:$1]] não tem conteúdo.",
+	"useresource-invalid-content": "A página [[:$1]] tem de ter o modelo de conteúdo $2. O modelo de conteúdo atual é $3.",
+	"useresource-error-category": "Páginas com erros UseResource"
+}
