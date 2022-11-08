@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Meno25"
+		]
+	},
+	"useresource-desc": "يضيف ملف<usescript> \"و\"<usestyle> `العلامات التي تسمح بتحميل JavaScript و CSS في مساحة اسم ميدياويكي على أساس كل صفحة.",
+	"useresource-empty-src": "يجب ألا تكون السمة <code>src</code> فارغة.",
+	"useresource-invalid-title": "يجب أن تكون سمة <code>src</code> عنوانًا صالحًا.",
+	"useresource-invalid-namespace": "يجب أن تكون الصفحة [[:$1]] في مساحة الاسم $2 .",
+	"useresource-no-content": "الصفحة [[:$1]] ليس بها محتوى.",
+	"useresource-invalid-content": "يجب أن تحتوي الصفحة [[:$1]] على نموذج محتوى $2 ، ونموذج المحتوى الحالي هو $3 .",
+	"useresource-error-category": "الصفحات التي بها أخطاء UseResource"
+}
