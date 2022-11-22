@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"useresource-desc": "Doda znački »<usescript>« in »<usestyle>«, ki omogočata nalaganje JavaScripta in CSS v imenskem prostoru MediaWiki za posamezno stran.",
+	"useresource-empty-src": "Atribut <code>src</code> ne sme biti prazen.",
+	"useresource-invalid-title": "Atribut <code>src</code> mora biti veljaven naslov.",
+	"useresource-invalid-namespace": "Stran [[:$1]] mora biti v imenskem prostoru $2.",
+	"useresource-no-content": "Stran [[:$1]] ne vsebuje ničesar.",
+	"useresource-invalid-content": "Stran [[:$1]] mora imeti vsebinski model $2, trenutni vsebinski model je $3.",
+	"useresource-error-category": "Strani z napakami UseResource"
+}
