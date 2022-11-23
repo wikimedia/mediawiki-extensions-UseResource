@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"useresource-desc": "Adde le etiquettas `<usescript>` e `<usestyle>` permittente que codice JavaScript e CSS in le spatio de nomines MediaWiki sia cargate per pagina.",
+	"useresource-empty-src": "Le attributo <code>src</code> non debe esser vacue.",
+	"useresource-invalid-title": "Le attributo <code>src</code> debe esser in titulo valide.",
+	"useresource-invalid-namespace": "Le pagina [[:$1]] debe esser in le spatio de nomines $2.",
+	"useresource-no-content": "Le pagina [[:$1]] non ha contento.",
+	"useresource-invalid-content": "Le pagina [[:$1]] debe haber le modello de contento $2, ma le modello de contento actual es $3.",
+	"useresource-error-category": "Paginas con errores de UseResource"
+}
