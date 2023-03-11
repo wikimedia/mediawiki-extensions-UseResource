@@ -132,8 +132,8 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 				'useresource should be in head items.'
 			);
 			$this->assertSame(
-				$headItems['useresource'],
 				'<style>' . $expectedCSS . '</style>',
+				$headItems['useresource'],
 				'useresource should have the correct CSS code.'
 			);
 		} else {
