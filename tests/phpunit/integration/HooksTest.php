@@ -145,7 +145,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 		}
 	}
 
-	public function provideOnOutputPageParserOutputWithCode() {
+	public static function provideOnOutputPageParserOutputWithCode() {
 		// phpcs:disable Generic.Files.LineLength
 		return [
 			'One usescript tag' => [
@@ -212,7 +212,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 		$this->assertSame( $expectedExtensionData, $output->getExtensionData( 'useresource' ) );
 	}
 
-	public function provideHandleTag() {
+	public static function provideHandleTag() {
 		// phpcs:disable Generic.Files.LineLength
 		return [
 			'Tag with empty content' => [
