@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vlad5250"
+			"Winston Sung"
 		]
 	},
 	"useresource-desc": "Dodaje oznake `<usescript>` i `<usestyle>` koje omogućuju učitavanje JavaScripta i CSS-a u imenskom prostoru MediaWiki na temelju stranice po stranici."
