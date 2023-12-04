@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Brandon Fowler",
+			"McDutchie",
 			"Raymond",
 			"Umherirrender"
 		]
@@ -12,5 +13,5 @@
 	"useresource-invalid-namespace": "Error message shown when the page is in the wrong namespace. Parameters:\n* $1 - The page trying to be loaded.\n* $2 - The name of the valid namespace.",
 	"useresource-no-content": "Error message to show when the provided page has no content (e.g. it doesn't exist). Parameters:\n* $1 - The page being loaded.",
 	"useresource-invalid-content": "Error message to show when the page doesn't have the required d content model. Parameters:\n* $1 - The page being loaded.\n* $2 - The required content model.\n* $3 - The current content model of the page.",
-	"useresource-error-category": "Category for pages that have UseResource related errors."
+	"useresource-error-category": "Category for pages that have UseResource related errors.\n{{Tracking category name}}"
 }
