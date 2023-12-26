@@ -5,8 +5,8 @@
 		]
 	},
 	"useresource-desc": "מוסיף את התגים <usescript> ו־<usestyle>, שמאפשרים טעינת JavaScript ו־CSS במרחב השם MediaWiki על בסיס דף.",
-	"useresource-empty-src": "המאפיין <code>src</code> לא יכול להיות ריק.",
-	"useresource-invalid-title": "המאפיים <code>src</code> חייב להיות כותרת תקינה.",
+	"useresource-empty-src": "התכונה <code>src</code> לא יכולה להיות ריקה.",
+	"useresource-invalid-title": "התכונה <code>src</code> חייבת להיות כותרת תקינה.",
 	"useresource-invalid-namespace": "הדף [[:$1]] חייב להיות במרחב השם $2.",
 	"useresource-no-content": "בדף [[:$1]] אין תוכן.",
 	"useresource-invalid-content": "לדף [[:$1]] חייב להיות מודל התוכן $2, מודל התוכן הנוכחי הוא $3.",
