@@ -19,7 +19,6 @@
 
 namespace MediaWiki\Extension\UseResource\Test\Integration;
 
-use MediaWiki\MediaWikiServices;
 use MediaWikiIntegrationTestCase;
 use Parser;
 use ParserOptions;
@@ -46,7 +45,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 		$this->setUserLang( 'qqx' );
 		$this->setMwGlobals( 'wgLanguageCode', 'qqx' );
 
-		$services = MediaWikiServices::getInstance();
+		$services = $this->getServiceContainer();
 		$services->getMessageCache()->disable();
 
 		$this->parserOptions = ParserOptions::newFromContext( RequestContext::getMain() );
