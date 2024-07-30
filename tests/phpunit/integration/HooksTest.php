@@ -19,6 +19,7 @@
 
 namespace MediaWiki\Extension\UseResource\Test\Integration;
 
+use MediaWiki\MainConfigNames;
 use MediaWikiIntegrationTestCase;
 use Parser;
 use ParserOptions;
@@ -43,7 +44,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 		parent::setUp();
 
 		$this->setUserLang( 'qqx' );
-		$this->setMwGlobals( 'wgLanguageCode', 'qqx' );
+		$this->overrideConfigValue( MainConfigNames::LanguageCode, 'qqx' );
 
 		$services = $this->getServiceContainer();
 		$services->getMessageCache()->disable();
@@ -190,10 +191,10 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 	 * @dataProvider provideHandleTag
 	 */
 	public function testHandleTag( string $input, string $expectedOutput, $expectedExtensionData ) {
-		$this->setMwGlobals( [
-			'wgScriptPath' => '',
-			'wgScript' => '/index.php',
-			'wgArticlePath' => '/wiki/$1',
+		$this->overrideConfigValues( [
+			MainConfigNames::ScriptPath => '',
+			MainConfigNames::Script => '/index.php',
+			MainConfigNames::ArticlePath => '/wiki/$1',
 		] );
 
 		$output = $this->parser->parse( $input, Title::newFromText( 'Test' ), $this->parserOptions );
