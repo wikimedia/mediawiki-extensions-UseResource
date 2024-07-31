@@ -1,8 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Volvox"
 		]
 	},
-	"useresource-no-content": "Säit [[:$1|]] huet keen Inhalt."
+	"useresource-empty-src": "D'Attribut <code>src</code> däerf net eidel sinn.",
+	"useresource-invalid-title": "D'Attribut <code>src</code> muss ee gültegen Titel sinn.",
+	"useresource-invalid-namespace": "D'Säit [[:$1]] muss am Nummraum $2 leien.",
+	"useresource-no-content": "D'Säit [[:$1|]] huet keen Inhalt.",
+	"useresource-error-category": "Säite mat UseResource-Feeler"
 }
