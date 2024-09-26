@@ -39,11 +39,6 @@ class ModuleTest extends ResourceLoaderTestCase {
 		] );
 	}
 
-	public function testGetTargets() {
-		$this->assertContains( 'desktop', $this->module->getTargets(), 'should target desktop.' );
-		$this->assertContains( 'mobile', $this->module->getTargets(), 'should target mobile.' );
-	}
-
 	public function testGetScript() {
 		$this->assertSame(
 			'console.log(7)',

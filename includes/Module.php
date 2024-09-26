@@ -34,7 +34,6 @@ class Module extends RL\Module {
 	 */
 	public function __construct( $options ) {
 		$this->script = $options['code'];
-		$this->targets = [ 'desktop', 'mobile' ];
 	}
 
 	/** @inheritDoc */
