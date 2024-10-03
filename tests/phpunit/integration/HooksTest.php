@@ -103,7 +103,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 				'ext.useresource should be registered.'
 			);
 			$this->assertStringContainsString(
-				'mw.loader.implement("ext.useresource@',
+				'"ext.useresource@',
 				$headHtml,
 				'ext.useresource should be implemented in JavaScript.'
 			);
@@ -119,7 +119,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 				'ext.useresource should not be registered.'
 			);
 			$this->assertStringNotContainsString(
-				'mw.loader.implement("ext.useresource@',
+				'"ext.useresource@',
 				$headHtml,
 				'ext.useresource should not be implemented in JavaScript.'
 			);
@@ -150,7 +150,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 		return [
 			'One usescript tag' => [
 				'<usescript src="UseResourceTest.js" />',
-				'function($,jQuery,require,module){!function(){console.log(7)}();});',
+				'function($,jQuery,require,module){!function(){console.log(7)}();',
 				false
 			],
 			'One usestyle tag' => [
@@ -160,7 +160,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 			],
 			'Multiple usescript tags' => [
 				'<usescript src="UseResourceTest.js" /><usescript src="UseResourceTest.js" /><usescript src="UseResourceTest2.js" /><usescript src="UseResourceTest3.js" />',
-				'function($,jQuery,require,module){!function(){console.log(7)}();!function(){alert(8)}();});',
+				'function($,jQuery,require,module){!function(){console.log(7)}();!function(){alert(8)}();',
 				false
 			],
 			'Multiple usestyle tags' => [
@@ -170,7 +170,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 			],
 			'Multiple usescript and usestyle tags' => [
 				'<usescript src="UseResourceTest.js" /><usescript src="UseResourceTest.js" /><usescript src="UseResourceTest2.js" /><usescript src="UseResourceTest3.js" /><usestyle src="UseResourceTest.css" /><usestyle src="UseResourceTest.css" /><usestyle src="UseResourceTest2.css" /><usestyle src="UseResourceTest3.css" />',
-				'function($,jQuery,require,module){!function(){console.log(7)}();!function(){alert(8)}();});',
+				'function($,jQuery,require,module){!function(){console.log(7)}();!function(){alert(8)}();',
 				'*{color:red}body{background:green}'
 			],
 			'No usescript or usestyle tags' => [
@@ -208,7 +208,11 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 			] );
 		}
 
-		$this->assertSame( $expectedOutput, $output->getText() );
+		$html = $output->getText();
+		// Normalize the outer <div class="mw-parser-output"> as we don't really care about it
+		$html = preg_replace( '/(<div class=")[^"]*(mw-parser-output)[^>]*>/', '$1$2">', $html );
+
+		$this->assertSame( $expectedOutput, $html );
 		$this->assertSame( $expectedExtensionData, $output->getExtensionData( 'useresource' ) );
 	}
 
