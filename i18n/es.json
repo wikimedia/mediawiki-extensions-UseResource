@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"No se"
+		]
+	},
+	"useresource-invalid-content": "La página [[:$1]] debe tener el modelo de contenido $2, el modelo de contenido actual es $3."
+}
