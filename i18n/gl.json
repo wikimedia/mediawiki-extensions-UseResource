@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"useresource-desc": "Engade as etiquetas `<usescript>` e `<usestyle>`, que permiten cargar JavaScript e CSS no espazo de nomes MediaWiki por páxina.",
+	"useresource-empty-src": "O atributo <code>src</code> non pode estar baleiro.",
+	"useresource-invalid-title": "O atributo <code>src</code> debe ser un título válido.",
+	"useresource-invalid-namespace": "A páxina «[[:$1]]» debe estar no espazo de nomes $2.",
+	"useresource-no-content": "A páxina «[[:$1]]» non ten contido.",
+	"useresource-invalid-content": "A páxina «[[:$1]]» debe ter o modelo de contido «$2»; o modelo de contido actual é «$3».",
+	"useresource-error-category": "Páxinas con erros de UseResource"
+}
