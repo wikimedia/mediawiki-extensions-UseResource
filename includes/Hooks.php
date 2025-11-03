@@ -21,17 +21,17 @@ namespace MediaWiki\Extension\UseResource;
 
 use ContentHandler;
 use CssContent;
-use Html;
 use JavaScriptContent;
 use MediaWiki\Hook\OutputPageParserOutputHook;
 use MediaWiki\Hook\ParserFirstCallInitHook;
+use MediaWiki\Html\Html;
 use MediaWiki\ResourceLoader\ResourceLoader;
 use MediaWiki\Revision\SlotRecord;
+use MediaWiki\Title\Title;
 use OutputPage;
 use Parser;
 use ParserOutput;
 use TextContent;
-use Title;
 
 /**
  * Hook handlers for the UseResource extension
