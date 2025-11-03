@@ -20,11 +20,11 @@
 namespace MediaWiki\Extension\UseResource\Test\Integration;
 
 use MediaWiki\MainConfigNames;
+use MediaWiki\Title\Title;
 use MediaWikiIntegrationTestCase;
 use Parser;
 use ParserOptions;
 use RequestContext;
-use Title;
 
 /**
  * Tests for \MediaWiki\Extension\UseResource\Hooks
