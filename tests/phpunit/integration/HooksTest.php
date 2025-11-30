@@ -208,7 +208,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 			] );
 		}
 
-		$this->assertSame( $expectedOutput, $output->getRawText() );
+		$this->assertSame( $expectedOutput, $output->getContentHolderText() );
 		$this->assertSame( $expectedExtensionData, $output->getExtensionData( 'useresource' ) );
 	}
 
