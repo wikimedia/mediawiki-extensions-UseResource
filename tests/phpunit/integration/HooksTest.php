@@ -91,7 +91,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 		$parserOutput = $this->parser->parse( $input, $title, $this->parserOptions );
 
 		$outputPage = $context->getOutput();
-		$outputPage->addParserOutput( $parserOutput );
+		$outputPage->addParserOutput( $parserOutput, $this->parserOptions );
 
 		$headHtml = strval( $outputPage->getRlClient()->getHeadHtml() );
 		$headItems = $outputPage->getHeadItemsArray();
@@ -208,11 +208,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 			] );
 		}
 
-		$html = $output->getText();
-		// Normalize the outer <div class="mw-parser-output"> as we don't really care about it
-		$html = preg_replace( '/(<div class=")[^"]*(mw-parser-output)[^>]*>/', '$1$2">', $html );
-
-		$this->assertSame( $expectedOutput, $html );
+		$this->assertSame( $expectedOutput, $output->getRawText() );
 		$this->assertSame( $expectedExtensionData, $output->getExtensionData( 'useresource' ) );
 	}
 
@@ -221,7 +217,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 		return [
 			'Tag with empty content' => [
 				'<usescript src="MediaWiki:UseResourceTest.js"></usescript>',
-				'<div class="mw-parser-output"></div>',
+				'',
 				static function ( $ids ) {
 					return [
 						'pages' => [ $ids[0] ],
@@ -231,7 +227,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 			],
 			'Tag with content' => [
 				'<usescript src="MediaWiki:UseResourceTest.js">Some text</usescript>',
-				'<div class="mw-parser-output"></div>',
+				'',
 				static function ( $ids ) {
 					return [
 						'pages' => [ $ids[0] ],
@@ -241,55 +237,55 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 			],
 			'Tag without src' => [
 				'<usescript />',
-				'<div class="mw-parser-output"><p><strong class="error">(useresource-empty-src)</strong>
-</p></div>',
+				'<p><strong class="error">(useresource-empty-src)</strong>
+</p>',
 				null
 			],
 			'Tag with invalid title' => [
 				'<usescript src="{" />',
-				'<div class="mw-parser-output"><p><strong class="error">(useresource-invalid-title)</strong>
-</p></div>',
+				'<p><strong class="error">(useresource-invalid-title)</strong>
+</p>',
 				null
 			],
 			'Tag with non-existent page' => [
 				'<usescript src="MediaWiki:UseResourceTestDoesNotExist.js />',
-				'<div class="mw-parser-output"><p><strong class="error">(useresource-no-content: MediaWiki:UseResourceTestDoesNotExist.js)</strong>
-</p></div>',
+				'<p><strong class="error">(useresource-no-content: MediaWiki:UseResourceTestDoesNotExist.js)</strong>
+</p>',
 				null
 			],
 			'Tag with invalid namespace' => [
 				'<usescript src="User:TestUser/UseResourceTest.js" />',
-				'<div class="mw-parser-output"><p><strong class="error">(useresource-invalid-namespace: User:TestUser/UseResourceTest.js, MediaWiki)</strong>
-</p></div>',
+				'<p><strong class="error">(useresource-invalid-namespace: User:TestUser/UseResourceTest.js, MediaWiki)</strong>
+</p>',
 				null
 			],
 			'usescript tag with WikitextContent content' => [
 				'<usescript src="MediaWiki:UseResourceTest" />',
-				'<div class="mw-parser-output"><p><strong class="error">(useresource-invalid-content: MediaWiki:UseResourceTest, (content-model-javascript), (content-model-wikitext))</strong>
-</p></div>',
+				'<p><strong class="error">(useresource-invalid-content: MediaWiki:UseResourceTest, (content-model-javascript), (content-model-wikitext))</strong>
+</p>',
 				null
 			],
 			'usescript tag with CssContent content' => [
 				'<usescript src="MediaWiki:UseResourceTest.css" />',
-				'<div class="mw-parser-output"><p><strong class="error">(useresource-invalid-content: MediaWiki:UseResourceTest.css, (content-model-javascript), (content-model-css))</strong>
-</p></div>',
+				'<p><strong class="error">(useresource-invalid-content: MediaWiki:UseResourceTest.css, (content-model-javascript), (content-model-css))</strong>
+</p>',
 				null
 			],
 			'usestyle tag with WikitextContent content' => [
 				'<usestyle src="MediaWiki:UseResourceTest" />',
-				'<div class="mw-parser-output"><p><strong class="error">(useresource-invalid-content: MediaWiki:UseResourceTest, (content-model-css), (content-model-wikitext))</strong>
-</p></div>',
+				'<p><strong class="error">(useresource-invalid-content: MediaWiki:UseResourceTest, (content-model-css), (content-model-wikitext))</strong>
+</p>',
 				null
 			],
 			'usestyle tag with JavaScriptContent content' => [
 				'<usestyle src="MediaWiki:UseResourceTest.js" />',
-				'<div class="mw-parser-output"><p><strong class="error">(useresource-invalid-content: MediaWiki:UseResourceTest.js, (content-model-css), (content-model-javascript))</strong>
-</p></div>',
+				'<p><strong class="error">(useresource-invalid-content: MediaWiki:UseResourceTest.js, (content-model-css), (content-model-javascript))</strong>
+</p>',
 				null
 			],
 			'Tag with valid namespace' => [
 				'<usescript src="MediaWiki:UseResourceTest.js" />',
-				'<div class="mw-parser-output"></div>',
+				'',
 				static function ( $ids ) {
 					return [
 						'pages' => [ $ids[0] ],
@@ -299,7 +295,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 			],
 			'Tag without namespace' => [
 				'<usescript src="UseResourceTest.js" />',
-				'<div class="mw-parser-output"></div>',
+				'',
 				static function ( $ids ) {
 					return [
 						'pages' => [ $ids[0] ],
@@ -309,7 +305,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 			],
 			'Tag with empty page' => [
 				'<usescript src="MediaWiki:UseResourceTest2.js" />',
-				'<div class="mw-parser-output"></div>',
+				'',
 				static function ( $ids ) {
 					return [
 						'pages' => [ $ids[1] ]
@@ -318,7 +314,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 			],
 			'Two tags' => [
 				'<usescript src="MediaWiki:UseResourceTest.js" /><usescript src="MediaWiki:UseResourceTest3.js" />',
-				'<div class="mw-parser-output"></div>',
+				'',
 				static function ( $ids ) {
 					return [
 						'pages' => [ $ids[0], $ids[2] ],
@@ -328,7 +324,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 			],
 			'Two of the same tag'  => [
 				'<usescript src="MediaWiki:UseResourceTest.js" /><usescript src="MediaWiki:UseResourceTest.js" />',
-				'<div class="mw-parser-output"></div>',
+				'',
 				static function ( $ids ) {
 					return [
 						'pages' => [ $ids[0] ],
@@ -338,7 +334,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 			],
 			'Only a usestyle tag' => [
 				'<usestyle src="MediaWiki:UseResourceTest.css" />',
-				'<div class="mw-parser-output"></div>',
+				'',
 				static function ( $ids ) {
 					return [
 						'pages' => [ $ids[3] ],
@@ -348,7 +344,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 			],
 			'Only a usescript tag' => [
 				'<usescript src="MediaWiki:UseResourceTest.js" />',
-				'<div class="mw-parser-output"></div>',
+				'',
 				static function ( $ids ) {
 					return [
 						'pages' => [ $ids[0] ],
@@ -358,7 +354,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 			],
 			'Both usestyle and usescript tags'  => [
 				'<usescript src="MediaWiki:UseResourceTest.js" /><usestyle src="MediaWiki:UseResourceTest.css" />',
-				'<div class="mw-parser-output"></div>',
+				'',
 				static function ( $ids ) {
 					return [
 						'pages' => [ $ids[0], $ids[3] ],
