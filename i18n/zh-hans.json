@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Peterxy12"
+		]
+	},
+	"useresource-desc": "添加`<usescript>`与`<usestyle>`标签，来允许在MediaWiki命名空间的JavaScript与CSS被载入在各页面主要部分。",
+	"useresource-empty-src": "<code>src</code>属性不能为空。",
+	"useresource-invalid-title": "<code>src</code>属性必须是有效标题。",
+	"useresource-invalid-namespace": "页面[[:$1]]必须在命名空间$2里。",
+	"useresource-no-content": "页面[[:$1]]没有内容。",
+	"useresource-invalid-content": "页面[[:$1]]必须要有$2内容模型，目前的内容模型为$3 。",
+	"useresource-error-category": "带有使用来源错误的页面"
+}
