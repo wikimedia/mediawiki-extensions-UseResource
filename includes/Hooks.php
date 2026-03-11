@@ -126,7 +126,7 @@ class Hooks implements OutputPageParserOutputHook, ParserFirstCallInitHook {
 			$content = $revRecord ? $revRecord->getContent( SlotRecord::MAIN, $revRecord::RAW ) : null;
 
 			// Register as a template so the page is re-parsed when the script is edited
-			$parser->getOutput()->addTemplate( $title, $articleID, $revRecord ? $revRecord->getId() : null );
+			$parser->getOutput()->addTemplate( $title, $articleID, $revRecord ? $revRecord->getId() : 0 );
 
 			if ( !$content ) {
 				return self::showError( $parser, 'useresource-no-content', $title->getFullText() );
