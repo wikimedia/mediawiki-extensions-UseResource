@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"EGobi",
 			"Eduardoaddad"
 		]
 	},
-	"useresource-desc": "Adiciona as marcações `<usescript>` e `<usestyle>` que permite que JavaScript e CSS no namespace MediaWiki sejam carregados por página.",
+	"useresource-desc": "Adiciona as marcações `<usescript>` e `<usestyle>`, o que permite que JavaScript e CSS no espaço nominal MediaWiki sejam carregados por página.",
 	"useresource-empty-src": "O atributo <code>src</code> não deve estar vazio.",
 	"useresource-invalid-title": "O atributo <code>src</code> deve ser um título válido.",
 	"useresource-invalid-namespace": "A página [[:$1]] deve estar no espaço nominal $2.",
