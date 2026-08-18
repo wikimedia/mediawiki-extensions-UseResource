@@ -4,5 +4,11 @@
 			"AhmedG612"
 		]
 	},
-	"useresource-invalid-namespace": "Bogga [[:$1]] waa inuu ku jiraa magaca qaybta $2."
+	"useresource-desc": "Waxay ku dartaa summadaha `<usescript>` iyo `<usestyle>` kuwaas oo oggolaanaya in JavaScript iyo CSS ku jira magaca MediaWiki lagu soo shubo bog kasta si gaar ah.",
+	"useresource-empty-src": "Sifada <code>src</code> waa inaysan madhnaan.",
+	"useresource-invalid-title": "Sifada <code>src</code> waa inay noqotaa cinwaan sax ah.",
+	"useresource-invalid-namespace": "Bogga [[:$1]] waa inuu ku jiraa magaca qaybta $2.",
+	"useresource-no-content": "Bogga [[:$1]] ma laha wax nuxur ah.",
+	"useresource-invalid-content": "Bogga [[:$1]] waa inuu lahaadaa qaabka nuxurka $2, halka qaabka nuxurka hadda jira uu yahay $3.",
+	"useresource-error-category": "Bogagga leh khaladaadka UseResource"
 }
