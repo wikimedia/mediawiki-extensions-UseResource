@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"useresource-desc": "Pridáva značky `<usescript>` a `<usestyle>`, ktoré umožňujú načítať JavaScript a CSS z menného priestoru MediaWiki pre jednotlivé stránky.",
+	"useresource-empty-src": "Atribút <code>src</code> nesmie byť prázdny.",
+	"useresource-invalid-title": "Atribút <code>src</code> musí byť platný názov stránky.",
+	"useresource-invalid-namespace": "Stránka [[:$1]] musí byť v mennom priestore $2.",
+	"useresource-no-content": "Stránka [[:$1]] nemá žiadny obsah.",
+	"useresource-invalid-content": "Stránka [[:$1]] musí mať model obsahu $2, aktuálny model obsahu je $3.",
+	"useresource-error-category": "Stránky s chybami rozšírenia UseResource"
+}
